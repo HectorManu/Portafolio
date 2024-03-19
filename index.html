@@ -3,51 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" id="theme"> <!-- Enlaza tu archivo CSS aquí -->
     <script src="modo-oscuro.js" defer></script> <!-- Agrega el script para el modo oscuro -->
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>Mi Portafolio</h1>
-        <button id="toggleTheme">Cambiar Tema</button>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- CONTACT button outside the list if it's styled differently -->
+            <a href="#contact" class="contact-button">CONTACT</a>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#sobre-mi">Sobre Mí</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-    <section id="inicio">
-        <h2>¡Bienvenido a mi Portafolio!</h2>
-        <p>Introducción o declaración breve sobre ti.</p>
+    
+    <!-- About Section -->
+    <section id="about">
+        <h1>Software Engineer</h1>
+        <h2>Data Engineering</h2>
+        <!-- Profile Picture -->
+        <img src="profile-pic.jpg" alt="Software Engineer">
+        <!-- Include any descriptive elements here -->
+        <p>Bio goes here...</p>
     </section>
-    <section id="proyectos">
-        <h2>Proyectos Destacados</h2>
-        <div class="proyecto">
-            <img src="proyecto1.jpg" alt="Proyecto 1">
-            <h3>Proyecto 1</h3>
-            <p>Descripción breve del proyecto 1.</p>
+    
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <!-- Skill Items -->
+            <div class="skill">Python</div>
+            <div class="skill">Machine Learning</div>
+            <!-- Add more skills here -->
         </div>
-        <div class="proyecto">
-            <img src="proyecto2.jpg" alt="Proyecto 2">
-            <h3>Proyecto 2</h3>
-            <p>Descripción breve del proyecto 2.</p>
+        <div class="skills-counter">
+            <span>Skills 928</span>
         </div>
-        <!-- Agrega más proyectos aquí -->
     </section>
-    <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>Información sobre ti y tu experiencia.</p>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <img src="project-thumbnail.jpg" alt="Project 1">
+            <div class="project-info">
+                <h3>Project 1</h3>
+                <p>Description of Project 1</p>
+            </div>
+        </div>
+        <!-- Repeat for other projects -->
     </section>
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme en <a href="mailto:tu@email.com">tu@email.com</a></p>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <!-- Contact form or information -->
+        <form>
+            <!-- Input fields for the contact form -->
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            <input type="email" id="email" name="email" placeholder="Your Email">
+            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Tu Nombre</p>
+        <p>&copy; 2023 Your Name</p>
     </footer>
+
 </body>
 </html>
